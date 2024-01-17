@@ -66,7 +66,11 @@ export default function Home() {
             {prediction.output && (
               <div className="prediction-image">
                 <h2>Prediction Result:</h2>
-                <Image src={prediction.output[prediction.output.length - 1]} alt="Prediction Image" width={500} height={300} />
+                <Image src={prediction.output[prediction.output.length - 1]} 
+                alt="Prediction Image" 
+                layout="responsive"
+                width={500} 
+                height={300} />
               </div>
             )}
             <p>status: {prediction.status}</p>

@@ -33,3 +33,17 @@
   aspect-ratio: 1 / 1;
   position: relative
 }
+
+.prediction-image img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* To remove any extra space below the image */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .prediction-image img {
+    /* Additional styles for screens narrower than 600px */
+  }
+}
