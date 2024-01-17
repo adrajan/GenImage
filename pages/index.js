@@ -50,7 +50,7 @@ export default function Home() {
       </Head>
 
       <p>
-        Dream something with{" "}
+        Generate images with Stability AI {" "}
         <a href="https://replicate.com/stability-ai/stable-diffusion">SDXL</a>:
       </p>
 
