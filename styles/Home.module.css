@@ -227,3 +227,15 @@
     transform: rotate(0deg);
   }
 }
+
+.formInput {
+  display: block;
+  margin-bottom: 15px; /* Adjust as needed for spacing */
+  width: 25%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.formButton {
+  display: block;
+  margin-top: 10px; /* Space above the button */
+}

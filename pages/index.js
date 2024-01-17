@@ -18,6 +18,7 @@ export default function Home() {
       },
       body: JSON.stringify({
         prompt: e.target.prompt.value,
+        image: e.target.image.value,
       }),
     });
     let prediction = await response.json();
@@ -55,8 +56,12 @@ export default function Home() {
       </p>
 
       <form className={styles.form} onSubmit={handleSubmit}>
-        <input type="text" name="prompt" placeholder="Enter a prompt to display an image" />
-        <button type="submit">Go!</button>
+        <input type="text" 
+        name="prompt"
+         placeholder="Enter a prompt to display an image"
+         className={styles.formInput}  />
+        <input type="text" name="image" placeholder="Enter a image url" className={styles.formInput} />
+        <button type="submit" className={styles.formButton}>Go!</button>
       </form>
 
       {error && <div>{error}</div>}
