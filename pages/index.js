@@ -62,15 +62,11 @@ export default function Home() {
       {error && <div>{error}</div>}
 
       {prediction && (
-        <div>
+        <div className="prediction-image">
             {prediction.output && (
-              <div className={styles.imageWrapper}>
-              <Image
-                fill
-                src={prediction.output[prediction.output.length - 1]}
-                alt="output"
-                sizes='100vw'
-              />
+              <div className="prediction-image">
+                <h2>Prediction Result:</h2>
+                <Image src={prediction.output[prediction.output.length - 1]} alt="Prediction Image" width={500} height={300} />
               </div>
             )}
             <p>status: {prediction.status}</p>
