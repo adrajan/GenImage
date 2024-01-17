@@ -29,10 +29,10 @@
 }
 
 .prediction-image img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
-  display: block; /* To remove any extra space below the image */
-  margin-left: auto;
+  display: flex; /* To remove any extra space below the image */
+  margin-left: 20;
   margin-right: auto;
 }
 
