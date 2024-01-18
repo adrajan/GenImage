@@ -60,7 +60,7 @@ export default function Home() {
         name="prompt"
          placeholder="Enter a prompt to display an image"
          className={styles.formInput}  />
-        <input type="text" name="image" placeholder="Enter a image url (optional)" className={styles.formInput} />
+        <input type="text" name="image" placeholder="Enter an image URL (optional)" className={styles.formInput} />
         <button type="submit" className={styles.formButton}>Go!</button>
       </form>
 
